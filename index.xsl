@@ -105,6 +105,7 @@ footer
 	        <th style="text-align:left">URL</th>
 	        <th style="text-align:left">Update freq</th>
 	        <th style="text-align:left">Updated at</th>
+		<th style="text-align:left">Priority</th>
 	      </tr>
 		</thead>
 		<tbody>
@@ -113,6 +114,7 @@ footer
 	        <td class="url"><xsl:value-of select="s:loc"/></td>
 	        <td><xsl:value-of select="s:changefreq"/></td>
 	        <td><xsl:value-of select="concat(substring(s:lastmod,0,11),concat(' ', substring(s:lastmod,12,5)))"/></td>
+		<td><xsl:value-of select="s:Priority"/></td>
 	      </tr>
 	      </xsl:for-each>
 		</tbody>
