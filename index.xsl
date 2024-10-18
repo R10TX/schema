@@ -114,7 +114,7 @@ footer
 	        <td class="url"><xsl:value-of select="s:loc"/></td>
 	        <td><xsl:value-of select="s:changefreq"/></td>
 	        <td><xsl:value-of select="concat(substring(s:lastmod,0,11),concat(' ', substring(s:lastmod,12,5)))"/></td>
-		<td><xsl:value-of select="s:Priority"/></td>
+		<td><xsl:value-of select="s:priority"/></td>
 	      </tr>
 	      </xsl:for-each>
 		</tbody>
